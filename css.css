@@ -49,8 +49,6 @@ html, body {
 /* Main content styles */
 main {
     padding: 20px;
-    width: 100%; /* Ensure main fills the width of the viewport */
-    box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .section {
