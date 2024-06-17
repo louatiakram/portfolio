@@ -53,7 +53,7 @@ main {
 
 .section {
     width: 100%;
-    max-width: 800px; /* Limit width of sections for readability */
+    max-width: 1200px; /* Limit width of sections for readability */
     margin: 20px auto; /* Center sections horizontally */
     padding: 30px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
