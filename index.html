@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akram's Portfolio</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header class="App-header">
+        <div class="header-content">
+            <h1>Welcome to Akram's Portfolio</h1>
+            <p>A showcase of my projects, skills, and contact information.</p>
+        </div>
+    </header>
+    <main>
+        <section id="projects" class="section">
+            <div class="section-content">
+                <!-- ProjectList component content goes here -->
+                <h2>Projects</h2>
+                <ul>
+                    <li>Project 1</li>
+                    <li>Project 2</li>
+                    <li>Project 3</li>
+                </ul>
+            </div>
+        </section>
+        <section id="skills" class="section">
+            <div class="section-content">
+                <!-- SkillList component content goes here -->
+                <h2>Skills</h2>
+                <ul>
+                    <li>Skill 1</li>
+                    <li>Skill 2</li>
+                    <li>Skill 3</li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <div class="section-content">
+                <!-- ContactForm component content goes here -->
+                <h2>Contact Me</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Akram's Portfolio</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
