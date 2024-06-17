@@ -23,6 +23,9 @@ html, body {
     transform: translateY(-20px);
     animation: fadeInUp 0.8s forwards;
     animation-delay: 0.2s;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
 }
 
 @keyframes fadeInUp {
@@ -36,6 +39,10 @@ html, body {
     }
 }
 
+.left-content {
+    flex: 1; /* Take up remaining space */
+}
+
 .App-header h1 {
     font-size: 3rem;
     margin-bottom: 10px;
@@ -46,6 +53,16 @@ html, body {
     line-height: 1.6;
 }
 
+.image-container {
+    flex-shrink: 0; /* Do not allow image to shrink */
+    margin-left: 20px; /* Adjust margin as needed */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure image does not exceed container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
 /* Main content styles */
 main {
     padding: 20px;
@@ -53,7 +70,7 @@ main {
 
 .section {
     width: 100%;
-    max-width: 1200px; /* Limit width of sections for readability */
+    max-width: 1400px; /* Limit width of sections for readability */
     margin: 20px auto; /* Center sections horizontally */
     padding: 30px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
@@ -105,21 +122,58 @@ footer p {
     margin: 0;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    .App-header {
-        padding: 30px 10px;
-    }
+/* Contact form styles */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
 
-    .header-content {
-        padding: 0 10px;
-    }
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
 
-    main {
-        padding: 10px;
-    }
+.contact-form label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
 
-    .section {
-        padding: 20px;
-    }
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-form button {
+    display: inline-block;
+    background-color: #012545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #0d4a6b;
+}
+
+.error-message {
+    color: #ff0000;
+    font-size: 0.9rem;
+    margin-top: 5px;
 }

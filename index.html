@@ -5,56 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akram's Portfolio</title>
     <link rel="stylesheet" href="css.css">
+    <style>
+        /* Additional inline styles if necessary */
+    </style>
 </head>
 <body>
-    <header class="App-header">
-        <div class="header-content">
-            <h1>Welcome to Akram's Portfolio</h1>
-            <p>A showcase of my projects, skills, and contact information.</p>
-        </div>
-    </header>
-    <main>
-        <section id="projects" class="section">
-            <div class="section-content">
-                <!-- ProjectList component content goes here -->
-                <h2>Projects</h2>
-                <ul>
-                    <li>Project 1</li>
-                    <li>Project 2</li>
-                    <li>Project 3</li>
-                </ul>
+    <div class="App">
+        <header class="App-header">
+            <div class="header-content">
+
+                    <div class="left-content">
+                        <div class="home-content">
+                            <h1>Hey, My name is Akram</h1>
+                            <p>I'm a <span id="typingText"></span><span class="cursor"></span></p>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="./a24L.png" alt="Me">
+                    </div>
+      
             </div>
-        </section>
-        <section id="skills" class="section">
-            <div class="section-content">
-                <!-- SkillList component content goes here -->
-                <h2>Skills</h2>
-                <ul>
-                    <li>Skill 1</li>
-                    <li>Skill 2</li>
-                    <li>Skill 3</li>
-                </ul>
-            </div>
-        </section>
-        <section id="contact" class="section">
-            <div class="section-content">
-                <!-- ContactForm component content goes here -->
-                <h2>Contact Me</h2>
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required><br><br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required><br><br>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="4" required></textarea><br><br>
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; <span id="currentYear"></span> Akram's Portfolio</p>
-    </footer>
+        </header>
+        <main>
+
+            <section id="projects" class="section">
+                <div class="section-content">
+                    <h2>Projects</h2>
+                    <div class="card-list">
+                        <!-- Example card -->
+                        <div class="card">
+                            <div class="card-image" style="background-image: url('/example.jpg')"></div>
+                            <div class="card-content">
+                                <h3 class="card-title">Project Title</h3>
+                                <p class="card-description">Project description goes here.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="skills" class="section">
+                <div class="section-content">
+                    <h2>Skills</h2>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <h3>Skill Name</h3>
+                            <div class="skill-bar">
+                                <div class="skill-bar-level" style="width: 80%;"></div>
+                            </div>
+                        </li>
+                        <!-- More skills can be dynamically added here -->
+                    </ul>
+                </div>
+            </section>
+            <section id="contact" class="section">
+                <div class="section-content">
+                    <h2>Contact Me</h2>
+                    <form class="contact-form" action="/submit-form" method="POST">
+                        <div class="form-group">
+                            <label>Name:</label>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email:</label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Message:</label>
+                            <textarea name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; <span id="year"></span> Akram's Portfolio</p>
+        </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
