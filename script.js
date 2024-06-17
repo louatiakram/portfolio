@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Typing effect logic
-    const phrases = ["Game Developer.", "Web Developer."];
+    const phrases = ["Game Developer", "Web Developer"];
     let textIndex = 0;
     let isDeleting = false;
     let typingText = '';
