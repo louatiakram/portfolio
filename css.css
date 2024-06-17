@@ -5,6 +5,7 @@ html, body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f8f9fa;
     color: #333;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 /* Header styles */
@@ -48,12 +49,14 @@ html, body {
 /* Main content styles */
 main {
     padding: 20px;
+    width: 100%; /* Ensure main fills the width of the viewport */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .section {
     width: 100%;
-    max-width: auto;
-    margin: 20px 0;
+    max-width: 800px; /* Limit width of sections for readability */
+    margin: 20px auto; /* Center sections horizontally */
     padding: 30px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
