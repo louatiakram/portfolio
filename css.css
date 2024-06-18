@@ -490,12 +490,12 @@ footer p {
 
 /* Dark mode styles */
 .dark-mode main {
-    background-color: #002240; /* Dark blue main content */
+    background-color: #012545; /* Dark blue main content */
 }
 
 .dark-mode .section {
-    background-color: #002240; /* Dark blue section background */
-    color: #002240; /* White text */
+    background-color: #012545; /* Dark blue section background */
+    color: #012545; /* White text */
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1); /* Adjust shadow color */
 }
 
@@ -509,19 +509,19 @@ footer p {
 
 .dark-mode .contact-form button {
     background-color: #ccc; /* Darker blue background */
-    color: #002240; /* Lighter gray text */
+    color: #012545; /* Lighter gray text */
     /* Adjust other properties if needed for better contrast */
 }
 
 .dark-mode .download-button
 {
     background-color: #ccc; /* Darker blue on hover */
-    color: #002240; /* Lighter gray text */
+    color: #012545; /* Lighter gray text */
 }
 
 .dark-mode .contact-form button:hover {
     background-color: #ccc; /* Darker blue on hover */
-    color: #002240; /* Lighter gray text */
+    color: #012545; /* Lighter gray text */
 }
 
 .dark-mode .card{
@@ -530,5 +530,5 @@ footer p {
 
 .dark-mode #myBtn {
     background-color: white;
-    color: #002240;
+    color: #012545;
 }
