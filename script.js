@@ -131,3 +131,20 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// script.js or within a <script> tag in HTML
+
+document.querySelectorAll('.floating-navbar a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const sectionId = this.getAttribute('href').substring(1);
+        const section = document.getElementById(sectionId);
+
+        if (section) {
+            section.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
