@@ -373,7 +373,7 @@ footer p {
 
 .floating-navbar {
     position: fixed;
-    top: 54%;
+    top: 60%;
     right: 38px; /* Adjust the left distance as needed */
     transform: translateY(-50%);
     z-index: 100;
