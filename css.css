@@ -144,14 +144,7 @@ main {
     border-radius: 8px;
     overflow: hidden;
     width: 40%;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
+    margin-bottom: 20px;}
 
 .card-image img {
     width: 100%;
@@ -178,7 +171,7 @@ main {
     padding: 0;
     display: flex;
     flex-wrap: wrap; /* Wrap items to new lines if needed */
-    gap: 20px;
+    gap: 40px;
 }
 
 .skill-item {
@@ -359,5 +352,3 @@ footer p {
 #myBtn:hover {
     background-color: #0d4a6b; /* Darker background color on hover */
 }
-
-

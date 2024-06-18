@@ -93,3 +93,41 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+        let cardWidth, cardHeight, centerX, centerY;
+        
+        const updateTransform = (mouseX, mouseY) => {
+            const maxRotate = 15; // Max rotation angle in degrees
+            const rotateX = ((centerY - mouseY) / centerY) * maxRotate;
+            const rotateY = ((mouseX - centerX) / centerX) * maxRotate;
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        };
+
+        const onMouseMove = (e) => {
+            if (!cardWidth || !cardHeight) {
+                const rect = card.getBoundingClientRect();
+                cardWidth = rect.width;
+                cardHeight = rect.height;
+                centerX = cardWidth / 2;
+                centerY = cardHeight / 2;
+            }
+
+            const mouseX = e.clientX - card.getBoundingClientRect().left;
+            const mouseY = e.clientY - card.getBoundingClientRect().top;
+
+            requestAnimationFrame(() => updateTransform(mouseX, mouseY));
+        };
+
+        const onMouseLeave = () => {
+            card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+            cardWidth = cardHeight = centerX = centerY = null; // Reset values
+        };
+
+        card.addEventListener('mousemove', onMouseMove);
+        card.addEventListener('mouseleave', onMouseLeave);
+    });
+});
+
