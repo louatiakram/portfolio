@@ -519,13 +519,20 @@ footer p {
     color: #012545; /* Lighter gray text */
 }
 
-.dark-mode .contact-form button:hover {
+ .contact-form button:hover {
     background-color: #ccc; /* Darker blue on hover */
     color: #012545; /* Lighter gray text */
 }
 
-.dark-mode .card{
-    color: #ccc;
+
+
+.dark-mode .card-content {
+    color: #012545;
+    background-color: #ccc; /* Darker blue on hover */
+
+}
+.dark-mode .card-content p {
+    color: #012545; /* White text color for paragraphs inside card-content */
 }
 
 .dark-mode #myBtn {
