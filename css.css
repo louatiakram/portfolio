@@ -147,9 +147,12 @@ main {
     margin-bottom: 20px;}
 
 .card-image img {
-    width: 100%;
-    height: auto; /* Maintains the aspect ratio of the image */
-}
+        width: 100%; /* Ensure the image width fills its container */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 100%; /* Prevent image from exceeding its container */
+        height: 200px; /* Set a fixed height for consistent image size */
+        object-fit: fill; /* Maintain aspect ratio and cover the container */
+    }
 
 .card-content {
     padding: 20px;
