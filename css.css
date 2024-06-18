@@ -507,11 +507,6 @@ footer p {
     color: #ccc; /* Lighter gray text */
 }
 
-.dark-mode .contact-form button {
-    background-color: #ccc; /* Darker blue background */
-    color: #012545; /* Lighter gray text */
-    /* Adjust other properties if needed for better contrast */
-}
 
 .dark-mode .download-button
 {
