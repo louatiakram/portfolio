@@ -331,3 +331,33 @@ footer p {
         flex: 1; /* Equal space for skill items */
     }
 }
+
+#myBtn {
+    display: none; /* Hide the button by default */
+    position: fixed; /* Fixed position on the screen */
+    bottom: 20px; /* Distance from the bottom */
+    right: 30px; /* Distance from the right */
+    z-index: 99; /* Ensure it appears above other content */
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #012545; /* Button background color */
+    color: white; /* Text color */
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 8px;
+    transition: background-color 0.3s ease;
+}
+
+#myBtn svg {
+    width: 100%;
+    height: auto;
+    fill: currentColor;
+}
+
+#myBtn:hover {
+    background-color: #0d4a6b; /* Darker background color on hover */
+}
+
+
