@@ -1,4 +1,5 @@
-/* Reset default browser styles */
+/* css.css */
+
 html, body {
     margin: 0;
     padding: 0;
@@ -13,7 +14,7 @@ html, body {
     background-color: #012545;
     color: white;
     padding: 40px 20px;
-    text-align: left;
+    text-align: center; /* Center text for better mobile view */
 }
 
 .header-content {
@@ -24,8 +25,10 @@ html, body {
     animation: fadeInUp 0.8s forwards;
     animation-delay: 0.2s;
     display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space between items */
+    flex-direction: column; /* Column layout for mobile */
+    justify-content: center; /* Center items vertically */
     align-items: center; /* Center items vertically */
+    text-align: center; /* Center text for better mobile view */
 }
 
 @keyframes fadeInUp {
@@ -44,22 +47,22 @@ html, body {
 }
 
 .App-header h1 {
-    font-size: 3rem;
+    font-size: 2rem; /* Reduce font size for better mobile view */
     margin-bottom: 10px;
 }
 
 .App-header p {
-    font-size: 1.2rem;
+    font-size: 1rem; /* Reduce font size for better mobile view */
     line-height: 1.6;
 }
 
 .image-container {
     flex-shrink: 0; /* Do not allow image to shrink */
-    margin-left: 10px; /* Adjust margin as needed */
+    margin-top: 20px; /* Add margin for better spacing */
 }
 
 .image-container img {
-    max-width: 80%; /* Ensure image does not exceed container width */
+    max-width: 100%; /* Ensure image does not exceed container width */
     height: auto; /* Maintain aspect ratio */
 }
 
@@ -99,19 +102,19 @@ main {
 
 .section h2 {
     color: #012545;
-    font-size: 2.5rem;
+    font-size: 2rem; /* Reduce font size for better mobile view */
     margin-bottom: 20px;
 }
 
 .section p {
-    font-size: 1.1rem;
+    font-size: 1rem; /* Reduce font size for better mobile view */
     line-height: 1.6;
 }
 
 /* Project cards layout */
 .card-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column; /* Column layout for mobile */
     gap: 20px;
 }
 
@@ -119,7 +122,7 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
-    width: calc(33.333% - 20px); /* 3 cards per row with a gap of 20px */
+    width: 100%; /* Full width for better mobile view */
     margin-bottom: 20px;
 }
 
@@ -134,12 +137,47 @@ main {
 
 .card-title {
     margin: 0 0 10px 0;
-    font-size: 1.5em;
+    font-size: 1.2rem; /* Adjust font size for better mobile view */
 }
 
 .card-description {
     margin: 0;
-    font-size: 1em;
+    font-size: 1rem; /* Adjust font size for better mobile view */
+}
+
+/* Skills section */
+.skill-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to new lines if needed */
+    gap: 20px;
+}
+
+.skill-item {
+    flex: 1 1 calc(33.333% - 20px); /* 3 items per row with gap */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.skill-item h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem; /* Adjust font size for better mobile view */
+}
+
+.skill-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.skill-bar-level {
+    height: 10px;
+    background-color: #012545;
+    border-radius: 5px;
 }
 
 /* Footer styles */
@@ -160,7 +198,7 @@ footer p {
 
 /* Contact form styles */
 .contact-form {
-    max-width: 600px;
+    max-width: 100%; /* Full width for better mobile view */
     margin: 0 auto;
     background-color: #fff;
     padding: 30px;
@@ -174,7 +212,7 @@ footer p {
 
 .contact-form label {
     display: block;
-    font-size: 1.1rem;
+    font-size: 1rem; /* Adjust font size for better mobile view */
     margin-bottom: 5px;
 }
 
@@ -212,4 +250,49 @@ footer p {
     color: #ff0000;
     font-size: 0.9rem;
     margin-top: 5px;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+    .header-content {
+        flex-direction: row; /* Row layout for larger screens */
+        text-align: left; /* Left-align text for larger screens */
+    }
+
+    .App-header h1 {
+        font-size: 3rem; /* Larger font size for larger screens */
+    }
+
+    .App-header p {
+        font-size: 1.2rem; /* Larger font size for larger screens */
+    }
+
+    .image-container {
+        margin-left: 10px; /* Adjust margin for larger screens */
+    }
+
+    .section h2 {
+        font-size: 2.5rem; /* Larger font size for larger screens */
+    }
+
+    .section p {
+        font-size: 1.1rem; /* Larger font size for larger screens */
+    }
+
+    .card-list {
+        flex-direction: row; /* Row layout for larger screens */
+        flex-wrap: wrap; /* Wrap items for larger screens */
+    }
+
+    .card {
+        width: calc(33.333% - 20px); /* 3 cards per row with a gap of 20px */
+    }
+
+    .skill-list {
+        flex-wrap: nowrap; /* No wrap for larger screens */
+    }
+
+    .skill-item {
+        flex: 1; /* Equal space for skill items */
+    }
 }

@@ -1,3 +1,5 @@
+//script.js
+
 document.addEventListener('DOMContentLoaded', function() {
     // Typing effect logic
     const phrases = ["Game Developer", "Web Developer"];
