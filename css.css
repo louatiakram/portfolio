@@ -495,6 +495,29 @@ footer p {
    box-shadow: 0 0.3em 0 var(--outline_color);
   }
 
+
+.hidden {
+    display: none;
+}
+
+/* CSS for hide effect */
+.toggle-hide {
+    opacity: 1;
+    height: auto;
+    transition: opacity 0.4s ease-out, height 0.4s ease-out;
+}
+
+.toggle-hide.hidden {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease-in, height 0.4s ease-in;
+}
+
+/* Other styles as needed */
+
+
+
 /* Dark mode styles */
 .dark-mode main {
     background-color: #012545; /* Dark blue main content */

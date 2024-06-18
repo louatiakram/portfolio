@@ -177,3 +177,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+
+// Function to toggle hide effect
+function toggleHide() {
+    var navList = document.querySelector('.floating-navbar ul');
+    if (navList) {
+        navList.classList.toggle('hidden');
+    }
+}
