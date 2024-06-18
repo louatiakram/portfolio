@@ -534,3 +534,18 @@ footer p {
     background-color: white;
     color: #012545;
 }
+
+/*GIT BUTTON*/
+.github-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.github-button:hover {
+    background-color: #555;
+}
