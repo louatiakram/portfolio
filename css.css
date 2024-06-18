@@ -352,3 +352,19 @@ footer p {
 #myBtn:hover {
     background-color: #0d4a6b; /* Darker background color on hover */
 }
+
+.download-button {
+    display: inline-block;
+    background-color: #012545;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Add some spacing above the button */
+}
+
+.download-button:hover {
+    background-color: #0d4a6b; /* Darker background color on hover */
+}
