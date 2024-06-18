@@ -59,11 +59,26 @@ html, body {
 .image-container {
     flex-shrink: 0; /* Do not allow image to shrink */
     margin-top: 20px; /* Add margin for better spacing */
+    overflow: hidden; /* Hide overflow to contain the animation */
+    border-radius: 50%; /* Make the image round */
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Add shadow for nice effect */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
 
 .image-container img {
-    max-width: 100%; /* Ensure image does not exceed container width */
+    width: 100%; /* Ensure image does not exceed container width */
     height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.image-container:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.image-container:hover img {
+    transform: rotate(10deg) scale(1.1); /* Rotate and scale image on hover */
 }
 
 /* Main content styles */
@@ -94,6 +109,12 @@ main {
     }
 }
 
+.section-content-mid {
+    text-align: center;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Centers the content */
+}
+
 .section-content {
     text-align: left;
     max-width: 1200px; /* Adjust as needed */
@@ -122,7 +143,7 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
-    width: 100%; /* Full width for better mobile view */
+    width: 40%; /* Full width for better mobile view */
     margin-bottom: 20px;
 }
 
@@ -198,7 +219,7 @@ footer p {
 
 /* Contact form styles */
 .contact-form {
-    max-width: 100%; /* Full width for better mobile view */
+    max-width: 65%; /* Full width for better mobile view */
     margin: 0 auto;
     background-color: #fff;
     padding: 30px;
@@ -256,7 +277,7 @@ footer p {
 @media (min-width: 768px) {
     .header-content {
         flex-direction: row; /* Row layout for larger screens */
-        text-align: left; /* Left-align text for larger screens */
+        text-align: center; /* Left-align text for larger screens */
     }
 
     .App-header h1 {
@@ -268,7 +289,7 @@ footer p {
     }
 
     .image-container {
-        margin-left: 10px; /* Adjust margin for larger screens */
+        margin-right: 40px; /* Adjust margin for larger screens */
     }
 
     .section h2 {
