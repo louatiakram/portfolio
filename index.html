@@ -13,10 +13,10 @@
                 <div class="image-container">
                     <img src="./a24l.png" alt="Me">
                 </div>
-                    <div class="home-content">
-                        <h1>Hey! My name is Akram,</h1>
-                        <p>I'm a <span id="typingText"></span><span class="cursor"></span>.</p>
-                    </div>
+                <div class="home-content">
+                    <h1>Hey! My name is Akram,</h1>
+                    <p>I'm a <span id="typingText"></span><span class="cursor"></span>.</p>
+                </div>
             </div>
         </header>
         <main>
@@ -27,11 +27,11 @@
                         <!-- Example card -->
                         <div class="card">
                             <div class="card-image">
-                                <img src="./reactfront.png" alt="Me">
+                                <img src="./reactfront.png" alt="Project">
                             </div>
                             <div class="card-content">
                                 <h3 class="card-title">React JS</h3>
-                                <p class="card-description">frontend react project</p>
+                                <p class="card-description">Frontend React project</p>
                             </div>
                         </div>
                         <!-- More cards here -->
@@ -65,22 +65,20 @@
                 </div>
             </section>
             <section id="contact" class="section">
-                <div class="section-content-mid">
-                    <h2>Contact Me</h2>
-                </div>
                 <div class="section-content">
-                    <form class="contact-form" action="/submit-form" method="POST">
+                    <h2>Contact Me</h2>
+                    <form class="contact-form" id="contact-form" onsubmit="return sendEmail()">
                         <div class="form-group">
-                            <label>Name:</label>
-                            <input type="text" name="name" required>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
-                            <label>Email:</label>
-                            <input type="email" name="email" required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <label>Message:</label>
-                            <textarea name="message" rows="4" required></textarea>
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
                         </div>
                         <button type="submit">Send Message</button>
                     </form>
@@ -92,5 +90,15 @@
         </footer>
     </div>
     <script src="script.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "aXShHj6Jhg0zUBk8b", // Replace with your actual EmailJS public key
+        });
+    })();
+    </script>
 </body>
 </html>
