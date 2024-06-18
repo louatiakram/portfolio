@@ -148,3 +148,32 @@ document.querySelectorAll('.floating-navbar a').forEach(anchor => {
     });
 });
 
+// script.js or within a <script> tag in HTML
+
+function toggleTheme() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+
+    const themeToggle = document.getElementById('theme-toggle');
+    if (body.classList.contains('dark-mode')) {
+        themeToggle.checked = true;
+        saveThemePreference('dark');
+    } else {
+        themeToggle.checked = false;
+        saveThemePreference('light');
+    }
+}
+
+// Function to save theme preference to local storage
+function saveThemePreference(theme) {
+    localStorage.setItem('theme', theme);
+}
+
+// Check if user has a preference and set initial theme
+document.addEventListener('DOMContentLoaded', function() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        toggleTheme();
+    }
+});
+
