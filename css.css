@@ -86,8 +86,8 @@ html, body {
 .section {
     width: 100%;
     max-width: 1400px; /* Limit width of sections for readability */
-    margin: 20px auto; /* Center sections horizontally */
-    padding: 30px;
+    margin: 10px auto; /* Center sections horizontally */
+    padding: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     opacity: 0;
