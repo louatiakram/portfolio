@@ -172,16 +172,43 @@ function saveThemePreference(theme) {
 // Check if user has a preference and set initial theme
 document.addEventListener('DOMContentLoaded', function() {
     const savedTheme = localStorage.getItem('theme');
+    const savedHideState = localStorage.getItem('hideToggleState');
+    
+    // Restore theme
     if (savedTheme === 'dark') {
-        toggleTheme();
+        toggleTheme();  // This function should already toggle the theme based on savedTheme
+    }
+    
+    // Restore hide toggle state
+    if (savedHideState === 'hidden') {
+        toggleHide();  // This function should toggle the hide state based on savedHideState
+    }
+    
+    // Update hide toggle switch state
+    const hideToggle = document.getElementById('hide-toggle');
+    if (savedHideState === 'hidden') {
+        hideToggle.checked = true;
+    } else {
+        hideToggle.checked = false;
     }
 });
 
 
-// Function to toggle hide effect
+
+
+// Function to toggle hide
 function toggleHide() {
     var navList = document.querySelector('.floating-navbar ul');
     if (navList) {
         navList.classList.toggle('hidden');
+
+        // Save state to localStorage
+        if (navList.classList.contains('hidden')) {
+            localStorage.setItem('hideToggleState', 'hidden');
+        } else {
+            localStorage.setItem('hideToggleState', 'visible');
+        }
     }
 }
+
+
