@@ -518,15 +518,11 @@ footer p {
 
 
 
-/* Dark mode styles */
-.dark-mode main {
-    background-color: #012545; /* Dark blue main content */
-}
+
 
 .dark-mode .section {
     background-color: #012545; /* Dark blue section background */
     color: #012545; /* White text */
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1); /* Adjust shadow color */
 }
 
 .dark-mode .section h2 {
@@ -563,6 +559,20 @@ footer p {
 .dark-mode #myBtn {
     background-color: white;
     color: #012545;
+}
+
+.dark-mode .floating-navbar {
+    background-color: white;
+    color: #012545;
+}
+
+.dark-mode .floating-navbar a {
+    color: #012545;
+}
+
+.dark-mode .floating-navbar a:hover {
+    background-color: #ccc;
+    border-radius: 5px;
 }
 
 /*GIT BUTTON*/
