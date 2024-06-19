@@ -19,8 +19,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center; /* Center horizontally */
-    background-color: #012545;
     color: white;
+    background: linear-gradient(90deg, rgba(0, 11, 24, 1) 30%, rgba(9, 9, 121, 1) 60%, rgba(0, 212, 255, 1) 90%);
     padding: 40px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
@@ -99,7 +99,7 @@ body {
 }
 
 .section h2 {
-    color: #012545;
+    color: #000b18;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
@@ -234,14 +234,14 @@ main {
 
 .skill-bar-level {
     height: 10px;
-    background-color: #012545;
+    background-color: #000b18;
     border-radius: 5px;
 }
 
 
 /* Footer styles */
 footer {
-    background-color: #012545;
+    background-color: #000b18;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -292,7 +292,7 @@ footer p {
 
 .contact-form button {
     display: inline-block;
-    background-color: #012545;
+    background-color: #000b18;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -327,7 +327,7 @@ footer p {
     height: 40px;
     border: none;
     outline: none;
-    background-color: #012545; /* Button background color */
+    background-color: #000b18; /* Button background color */
     color: white; /* Text color */
     cursor: pointer;
     border-radius: 50%;
@@ -347,7 +347,7 @@ footer p {
 
 .download-button {
     display: inline-block;
-    background-color: #012545;
+    background-color: #000b18;
     color: white;
     padding: 10px 20px;
     font-size: 1rem;
@@ -370,7 +370,7 @@ footer p {
     right: 35px; /* Adjust the left distance as needed */
     transform: translateY(-50%);
     z-index: 100;
-    background-color: #012545;
+    background-color: #000b18;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -507,8 +507,8 @@ footer p {
 
 
 .dark-mode .section {
-    background-color: #012545; /* Dark blue section background */
-    color: #012545; /* White text */
+    background-color: #000b18; /* Dark blue section background */
+    color: #000b18; /* White text */
 }
 
 .dark-mode .section h2 {
@@ -523,30 +523,30 @@ footer p {
 .dark-mode .download-button
 {
     background-color: #ccc; /* Darker blue on hover */
-    color: #012545; /* Lighter gray text */
+    color: #000b18; /* Lighter gray text */
 }
 
 .dark-mode .card-content {
-    color: #012545;
+    color: #000b18;
     background-color: #ccc; /* Darker blue on hover */
 
 }
 .dark-mode .card-content p {
-    color: #012545; /* White text color for paragraphs inside card-content */
+    color: #000b18; /* White text color for paragraphs inside card-content */
 }
 
 .dark-mode #myBtn {
     background-color: white;
-    color: #012545;
+    color: #000b18;
 }
 
 .dark-mode .floating-navbar {
     background-color: white;
-    color: #012545;
+    color: #000b18;
 }
 
 .dark-mode .floating-navbar a {
-    color: #012545;
+    color: #000b18;
 }
 
 .dark-mode .floating-navbar a:hover {
@@ -562,7 +562,7 @@ footer p {
 .dark-mode .contact-form button {
 
     background-color: white;
-    color: #012545;
+    color: #000b18;
 
 }
 
@@ -575,7 +575,7 @@ footer p {
     margin-left: 10px;
     display: inline-block;
     padding: 8px 12px; /* Adjust padding for smaller size */
-    background-color: #012545;
+    background-color: #000b18;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
