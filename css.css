@@ -586,3 +586,57 @@ footer p {
 .github-button:hover {
     transform: scale(1.1);
 }
+
+/* tools */
+.languages-and-tools {
+    margin: 20px 0;
+  }
+  
+  .languages-and-tools p {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .languages-and-tools a {
+    transition: transform 0.2s;
+  }
+  
+  .languages-and-tools a:hover {
+    transform: scale(1.1);
+  }
+
+  /*footer social*/
+  .social-media {
+    margin: 20px auto;
+    margin-left: 20px;
+  }
+  
+  .social-media h3 {
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .social-media p {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .social-media a {
+    transition: transform 0.2s;
+  }
+  
+  .social-media a:hover {
+    transform: scale(1.1);
+  }
+  
+  .social-media-icon {
+    background-color: white;
+    border-radius: 8px; /* Adjust the radius as needed */
+    padding: 5px; /* Optional: adds some space inside the border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+  }
+  
+  
