@@ -302,6 +302,8 @@ footer p {
 }
 
 .contact-form button:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+
 }
 
 
@@ -550,6 +552,18 @@ footer p {
 .dark-mode .floating-navbar a:hover {
     background-color: #ccc;
     border-radius: 5px;
+}
+
+.dark-mode .form-group label {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.dark-mode .contact-form button {
+
+    background-color: white;
+    color: #012545;
+
 }
 
 /*GIT BUTTON*/
