@@ -193,7 +193,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
 
 
 // Function to toggle hide

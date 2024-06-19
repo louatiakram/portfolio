@@ -49,12 +49,14 @@ body {
     display: flex; /* Use flexbox for image container */
     align-items: center; /* Center image vertically */
     margin-left: 10px; /* Adjusted margin */
+    position: relative; /* Position relative for absolute positioning of shadow */
 }
 
 .image-container img {
     max-width: 80%;
     height: auto;
     border-radius: 20%; /* Rounded image */
+    box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.5); /* Black shadow from bottom */
 }
 
 /* Media query for responsiveness */
