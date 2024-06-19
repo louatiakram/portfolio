@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let cardWidth, cardHeight, centerX, centerY;
         
         const updateTransform = (mouseX, mouseY) => {
-            const maxRotate = 15; // Max rotation angle in degrees
+            const maxRotate = 20; // Max rotation angle in degrees
             const rotateX = ((centerY - mouseY) / centerY) * maxRotate;
             const rotateY = ((mouseX - centerX) / centerX) * maxRotate;
             card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
