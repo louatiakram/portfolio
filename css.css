@@ -152,6 +152,10 @@ main {
         padding: 0 10px;
     }
 
+    .image-container img {
+        max-width: 70%;
+    }
+
     .header-content h1{
         font-size: 1 px;
     }
