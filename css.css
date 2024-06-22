@@ -26,9 +26,6 @@ body {
 }
 
 .header-content {
-    margin-left: 20px;
-    flex: 1;
-    text-align: left;
     padding-right: 10px; /* Ensure adequate padding */
 }
 
