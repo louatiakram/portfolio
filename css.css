@@ -93,6 +93,8 @@ body {
 
 .section-content {
     text-align: left;
+    margin-left: 20px;
+
 }
 
 .section h2 {
@@ -600,7 +602,7 @@ button[type="submit"]:disabled {
 
 /* tools */
 .languages-and-tools {
-    margin: 20px 0;
+    margin-left: 20px;
   }
   
   .languages-and-tools p {
