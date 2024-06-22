@@ -627,7 +627,7 @@ button[type="submit"]:disabled {
 
   /*footer social*/
   .social-media {
-    margin: 20px auto;
+    margin-left: 20px;
     margin-bottom: 20px;
     gap: 10px;
   }
