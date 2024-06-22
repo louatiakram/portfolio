@@ -152,6 +152,14 @@ main {
         padding: 0 10px;
     }
 
+    .header-content h1{
+        font-size: 1rem
+    }
+
+    .header-content p {
+        font-size: 0.8 rem;
+    }
+
     main {
         padding: 10px;
     }
