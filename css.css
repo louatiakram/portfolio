@@ -16,13 +16,13 @@ body {
 }
 /* Header styles */
 .App-header {
-    gap: 20px;
+    gap: 100px;
     display: flex;
     align-items: center;
     justify-content: center; /* Center horizontally */
     color: white;
     background: linear-gradient(90deg, rgba(0, 11, 24, 1) 30%, rgba(9, 9, 121, 1) 60%, rgba(0, 212, 255, 1) 90%);
-    padding: 40px 10px;
+    padding: 40px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
@@ -37,7 +37,7 @@ body {
 }
 
 .header-content p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.6;
 }
 
@@ -48,7 +48,7 @@ body {
 }
 
 .image-container img {
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
     border-radius: 20%; /* Rounded image */
     box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.5); /* Black shadow from bottom */
