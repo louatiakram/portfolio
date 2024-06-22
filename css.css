@@ -27,18 +27,21 @@ body {
 
 .header-content {
     padding-right: auto; /* Ensure adequate padding */
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+
 }
 
 .header-content h1 {
     font-size: 2.5rem;
-    margin-right: 20px;
+
     margin-bottom: 10px;
 }
 
 .header-content p {
     font-size: 1.2rem;
     line-height: 1.6;
-    margin-right: 10px;
+
 
 }
 
@@ -153,15 +156,15 @@ main {
     }
 
     .image-container img {
-        max-width: 70%;
+        max-width: 60%;
     }
 
     .header-content h1{
-        font-size: 1 px;
+        font-size: 1rem;
     }
 
     .header-content p {
-        font-size: 0.5 px;
+        font-size: 0.5rem;
     }
 
     main {
