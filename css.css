@@ -145,91 +145,30 @@ main {
 }
 
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
+    main {
+        padding: 10px;
     }
 
-    p {
-        font-size: 1rem;
+    .section {
+        padding: 20px;
     }
-
-    .card-title {
-        font-size: 1.25rem;
-    }
-
-    .social-media-icon {
-        width: 40px;
-        height: 40px;
-    }
-
-    .languages-and-tools a img {
-        width: 40px;
-        height: 40px;
+    
+    .card {
+        width: calc(100% - 20px); /* Full width cards on small screens */
     }
 }
 
 @media (max-width: 375px) {
-    .card-title {
-        font-size: 1rem;
+    main {
+        padding: 5px;
     }
 
-    .github-button {
-        font-size: 0.9rem;
-        padding: 8px 16px;
+    .section {
+        padding: 5px;
     }
-
-    .skill-bar-level {
-        height: 15px;
-    }
-
-    .social-media-icon {
-        width: 30px;
-        height: 30px;
-    }
-
-    .languages-and-tools a img {
-        width: 30px;
-        height: 30px;
-    }
-}
-
-@media (max-width: 320px) {
-    h1 {
-        font-size: 1.75rem;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    .social-media-icon {
-        width: 25px;
-        height: 25px;
-    }
-
-    .languages-and-tools a img {
-        width: 25px;
-        height: 25px;
-    }
-}
-
-@media (max-width: 240px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 0.8rem;
-    }
-
-    .social-media-icon {
-        width: 20px;
-        height: 20px;
-    }
-
-    .languages-and-tools a img {
-        width: 20px;
-        height: 20px;
+    
+    .card {
+        width: calc(200% - 40px); /* Full width cards on small screens */
     }
 }
 
