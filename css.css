@@ -387,7 +387,7 @@ button[type="submit"]:disabled {
 
 .floating-navbar {
     position: fixed;
-    top: 16%;
+    top: 20%;
     right: 35px; /* Adjust the left distance as needed */
     transform: translateY(-50%);
     z-index: 100;
