@@ -158,21 +158,6 @@ main {
     }
 }
 
-@media (max-width: 375px) {
-    main {
-        padding: 5px;
-    }
-
-    .section {
-        padding: 5px;
-    }
-    
-    .card {
-        width: calc(200% - 40px); /* Full width cards on small screens */
-    }
-}
-
-
 .card-image img {
         width: 100%; /* Ensure the image width fills its container */
         height: auto; /* Maintain aspect ratio */
@@ -643,7 +628,7 @@ button[type="submit"]:disabled {
   /*footer social*/
   .social-media {
     margin: 20px auto;
-    margin-left: 20px;
+    margin-bottom: 20px;
     gap: 10px;
   }
   
