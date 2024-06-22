@@ -608,7 +608,7 @@ button[type="submit"]:disabled {
   .languages-and-tools p {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
   }
   
   .languages-and-tools a {
