@@ -16,20 +16,18 @@ body {
 }
 /* Header styles */
 .App-header {
-    gap: 40px;
+    gap: 20px;
     display: flex;
     align-items: center;
     justify-content: center; /* Center horizontally */
     color: white;
     background: linear-gradient(90deg, rgba(0, 11, 24, 1) 30%, rgba(9, 9, 121, 1) 60%, rgba(0, 212, 255, 1) 90%);
-    padding: 40px 20px;
+    padding: 40px 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .header-content {
     padding-right: auto; /* Ensure adequate padding */
-    align-items: center;
-    justify-content: center; /* Center horizontally */
 
 }
 
@@ -46,7 +44,6 @@ body {
 .image-container {
     display: flex; /* Use flexbox for image container */
     align-items: center; /* Center image vertically */
-    margin-left: 10px; /* Adjusted margin */
     position: relative; /* Position relative for absolute positioning of shadow */
 }
 
@@ -145,26 +142,6 @@ main {
 }
 
 @media (max-width: 768px) {
-    .App-header {
-        padding: 20px 10px;
-    }
-
-    .header-content {
-        padding: 0 10px;
-    }
-
-    .image-container img {
-        max-width: 60%;
-    }
-
-    .header-content h1{
-        font-size: 1rem;
-    }
-
-    .header-content p {
-        font-size: 0.5rem;
-    }
-
     main {
         padding: 10px;
     }
