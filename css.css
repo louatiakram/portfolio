@@ -80,6 +80,17 @@ body {
     animation: fadeIn 0.8s forwards;
 }
 
+.sectionP {
+    width: 100%;
+    max-width: auto;
+    margin: 20px 0;
+    padding: 30px;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s forwards;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
