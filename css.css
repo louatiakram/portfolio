@@ -630,7 +630,6 @@ button[type="submit"]:disabled {
 }
 
 /* tools */
-/* tools */
 .languages-and-tools {
     margin-left: 20px;
     overflow: hidden; /* Hide overflow for carousel effect */
@@ -646,9 +645,10 @@ button[type="submit"]:disabled {
   }
   
   .languages-and-tools .carousel-track {
+    display: flex;
     padding: 40px;
     gap: 80px;
-    display: flex;
+    width: max-content; /* Adjust width to fit all items */
     animation: scroll 30s linear infinite;
   }
   
@@ -665,9 +665,10 @@ button[type="submit"]:disabled {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-100% / 2));
+      transform: translateX(calc(-50%));
     }
   }
+  
   
 
   /*footer social*/
