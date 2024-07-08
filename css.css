@@ -630,23 +630,45 @@ button[type="submit"]:disabled {
 }
 
 /* tools */
+/* tools */
 .languages-and-tools {
     margin-left: 20px;
+    overflow: hidden; /* Hide overflow for carousel effect */
   }
   
-  .languages-and-tools p {
+  .languages-and-tools .carousel {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
   }
   
-  .languages-and-tools a {
+  .languages-and-tools .carousel-track {
+    padding: 40px;
+    gap: 80px;
+    display: flex;
+    animation: scroll 30s linear infinite;
+  }
+  
+  .languages-and-tools .carousel a {
     transition: transform 0.2s;
   }
   
-  .languages-and-tools a:hover {
+  .languages-and-tools .carousel a:hover {
     transform: scale(1.1);
   }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% / 2));
+    }
+  }
+  
 
   /*footer social*/
   .social-media {
