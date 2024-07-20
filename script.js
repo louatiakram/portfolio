@@ -1,6 +1,6 @@
 //script.js
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Typing effect logic
     const phrases = ["Game Developer", "Web Developer"];
     let textIndex = 0;
@@ -43,12 +43,12 @@ document.addEventListener('DOMContentLoaded', function() {
 function sendEmail() {
     // Prevent the form from submitting normally
     event.preventDefault();
-    
+
     // Fetch form values
     let name = document.getElementById('name').value;
     let email = document.getElementById('email').value;
     let message = document.getElementById('message').value;
-    
+
     // Prepare email parameters
     let params = {
         from_name: name,
@@ -57,19 +57,19 @@ function sendEmail() {
         message: message,
         to_name: 'Akram'    // Replace with recipient's name
     };
-    
+
     // Send email using EmailJS
     emailjs.send('service_20zxqun', 'template_h7wwvgr', params)
-        .then(function(response) {
+        .then(function (response) {
             console.log('Email sent:', response);
             alert('Your message has been sent successfully!');
             // Clear form fields after successful submission
             document.getElementById('contact-form').reset();
-        }, function(error) {
+        }, function (error) {
             console.error('Email send failed:', error);
             alert('Oops! Something went wrong. Please try again later.');
         });
-    
+
     return false;  // To avoid actual form submission
 }
 
@@ -77,7 +77,9 @@ function sendEmail() {
 var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+    scrollFunction()
+};
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -93,12 +95,12 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const cards = document.querySelectorAll('.card');
 
     cards.forEach(card => {
         let cardWidth, cardHeight, centerX, centerY;
-        
+
         const updateTransform = (mouseX, mouseY) => {
             const maxRotate = 20; // Max rotation angle in degrees
             const rotateX = ((centerY - mouseY) / centerY) * maxRotate;
@@ -134,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // script.js or within a <script> tag in HTML
 
 document.querySelectorAll('.floating-navbar a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
         const sectionId = this.getAttribute('href').substring(1);
@@ -170,20 +172,20 @@ function saveThemePreference(theme) {
 }
 
 // Check if user has a preference and set initial theme
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const savedTheme = localStorage.getItem('theme');
     const savedHideState = localStorage.getItem('hideToggleState');
-    
+
     // Restore theme
     if (savedTheme === 'dark') {
         toggleTheme();  // This function should already toggle the theme based on savedTheme
     }
-    
+
     // Restore hide toggle state
     if (savedHideState === 'hidden') {
         toggleHide();  // This function should toggle the hide state based on savedHideState
     }
-    
+
     // Update hide toggle switch state
     const hideToggle = document.getElementById('hide-toggle');
     if (savedHideState === 'hidden') {
@@ -193,7 +195,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-document.addEventListener('contextmenu', function(e) {
+document.addEventListener('contextmenu', function (e) {
     e.preventDefault();
 });
 

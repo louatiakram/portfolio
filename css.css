@@ -14,6 +14,7 @@ body {
     min-height: 100vh;
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
+
 /* Header styles */
 .App-header {
     gap: 40px;
@@ -169,25 +170,25 @@ main {
         margin-bottom: 10px;
         width: 200px;
     }
-    
+
     .header-content p {
         font-size: 1rem;
         line-height: 1.6;
         width: 200px;
     }
-    
+
     .card {
         width: calc(100% - 20px); /* Full width cards on small screens */
     }
 }
 
 .card-image img {
-        width: 100%; /* Ensure the image width fills its container */
-        height: auto; /* Maintain aspect ratio */
-        max-width: 100%; /* Prevent image from exceeding its container */
-        height: 250px; /* Set a fixed height for consistent image size */
-        object-fit: fill; /* Maintain aspect ratio and cover the container */
-    }
+    width: 100%; /* Ensure the image width fills its container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Prevent image from exceeding its container */
+    height: 250px; /* Set a fixed height for consistent image size */
+    object-fit: fill; /* Maintain aspect ratio and cover the container */
+}
 
 /* CARD CONTENT */
 .card-content {
@@ -292,7 +293,6 @@ footer p {
 }
 
 .contact-form input[type="text"],
-
 .contact-form input[type="email"],
 .contact-form textarea {
     width: calc(100% - 22px); /* Adjust width here */
@@ -343,11 +343,6 @@ button[type="submit"]:disabled {
 .contact-form button:hover {
     transform: scale(1.05); /* Scale up slightly on hover */
 }
-
-
-
-
-
 
 
 .error-message {
@@ -448,80 +443,80 @@ button[type="submit"]:disabled {
 /* The switch - the box around the slider */
 .switch {
     /* Variables */
-   --switch_width: 2em;
-   --switch_height: 1em;
-   --thumb_color: #e8e8e8;
-   --track_color: #e8e8e8;
-   --track_active_color: #888;
-   --outline_color: #000;
-   font-size: 17px;
-   position: relative;
-   display: inline-block;
-   width: var(--switch_width);
-   height: var(--switch_height);
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
-   opacity: 0;
-   width: 0;
-   height: 0;
-  }
-  
-  /* The slider */
-  .slider {
-   box-sizing: border-box;
-   border: 2px solid var(--outline_color);
-   position: absolute;
-   cursor: pointer;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   background-color: var(--track_color);
-   transition: .15s;
-   border-radius: var(--switch_height);
-  }
-  
-  .slider:before {
-   box-sizing: border-box;
-   position: absolute;
-   content: "";
-   height: var(--switch_height);
-   width: var(--switch_height);
-   border: 2px solid var(--outline_color);
-   border-radius: 100%;
-   left: -2px;
-   bottom: -2px;
-   background-color: var(--thumb_color);
-   transform: translateY(-0.2em);
-   box-shadow: 0 0.2em 0 var(--outline_color);
-   transition: .15s;
-  }
-  
-  input:checked + .slider {
-   background-color: var(--track_active_color);
-  }
-  
-  input:focus-visible + .slider {
-   box-shadow: 0 0 0 2px var(--track_active_color);
-  }
-  
-  /* Raise thumb when hovered */
-  input:hover + .slider:before {
-   transform: translateY(-0.3em);
-   box-shadow: 0 0.3em 0 var(--outline_color);
-  }
-  
-  input:checked + .slider:before {
-   transform: translateX(calc(var(--switch_width) - var(--switch_height))) translateY(-0.2em);
-  }
-  
-  /* Raise thumb when hovered & checked */
-  input:hover:checked + .slider:before {
-   transform: translateX(calc(var(--switch_width) - var(--switch_height))) translateY(-0.3em);
-   box-shadow: 0 0.3em 0 var(--outline_color);
-  }
+    --switch_width: 2em;
+    --switch_height: 1em;
+    --thumb_color: #e8e8e8;
+    --track_color: #e8e8e8;
+    --track_active_color: #888;
+    --outline_color: #000;
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: var(--switch_width);
+    height: var(--switch_height);
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    box-sizing: border-box;
+    border: 2px solid var(--outline_color);
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--track_color);
+    transition: .15s;
+    border-radius: var(--switch_height);
+}
+
+.slider:before {
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    height: var(--switch_height);
+    width: var(--switch_height);
+    border: 2px solid var(--outline_color);
+    border-radius: 100%;
+    left: -2px;
+    bottom: -2px;
+    background-color: var(--thumb_color);
+    transform: translateY(-0.2em);
+    box-shadow: 0 0.2em 0 var(--outline_color);
+    transition: .15s;
+}
+
+input:checked + .slider {
+    background-color: var(--track_active_color);
+}
+
+input:focus-visible + .slider {
+    box-shadow: 0 0 0 2px var(--track_active_color);
+}
+
+/* Raise thumb when hovered */
+input:hover + .slider:before {
+    transform: translateY(-0.3em);
+    box-shadow: 0 0.3em 0 var(--outline_color);
+}
+
+input:checked + .slider:before {
+    transform: translateX(calc(var(--switch_width) - var(--switch_height))) translateY(-0.2em);
+}
+
+/* Raise thumb when hovered & checked */
+input:hover:checked + .slider:before {
+    transform: translateX(calc(var(--switch_width) - var(--switch_height))) translateY(-0.3em);
+    box-shadow: 0 0.3em 0 var(--outline_color);
+}
 
 
 .hidden {
@@ -545,9 +540,6 @@ button[type="submit"]:disabled {
 /* Other styles as needed */
 
 
-
-
-
 .dark-mode .section {
     background-color: #000b18; /* Dark blue section background */
     color: #000b18; /* White text */
@@ -562,8 +554,7 @@ button[type="submit"]:disabled {
 }
 
 
-.dark-mode .download-button
-{
+.dark-mode .download-button {
     background-color: #ccc; /* Darker blue on hover */
     color: #000b18; /* Lighter gray text */
 }
@@ -573,6 +564,7 @@ button[type="submit"]:disabled {
     background-color: #ccc; /* Darker blue on hover */
 
 }
+
 .dark-mode .card-content p {
     color: #000b18; /* White text color for paragraphs inside card-content */
 }
@@ -633,68 +625,67 @@ button[type="submit"]:disabled {
 .languages-and-tools {
     margin-left: 20px;
     overflow: hidden; /* Hide overflow for carousel effect */
-  }
-  
-  .languages-and-tools .carousel {
+}
+
+.languages-and-tools .carousel {
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     position: relative;
     width: 100%;
-  }
-  
-  .languages-and-tools .carousel-track {
+}
+
+.languages-and-tools .carousel-track {
     display: flex;
     padding: 40px;
     gap: 80px;
     width: max-content; /* Adjust width to fit all items */
     animation: scroll 30s linear infinite;
-  }
-  
-  .languages-and-tools .carousel a {
+}
+
+.languages-and-tools .carousel a {
     transition: transform 0.2s;
-  }
-  
-  .languages-and-tools .carousel a:hover {
+}
+
+.languages-and-tools .carousel a:hover {
     transform: scale(1.1);
-  }
-  
-  @keyframes scroll {
+}
+
+@keyframes scroll {
     0% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-50%));
+        transform: translateX(calc(-50%));
     }
-  }
-  
-  
+}
 
-  /*footer social*/
-  .social-media {
+
+/*footer social*/
+.social-media {
     margin-left: 20px;
     margin-bottom: 10px;
     gap: 10px;
-  }
-  
-  .social-media p {
+}
+
+.social-media p {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-  }
-  
-  .social-media a {
+}
+
+.social-media a {
     transition: transform 0.2s;
-  }
-  
-  .social-media a:hover {
+}
+
+.social-media a:hover {
     transform: scale(1.1);
-  }
-  
-  .social-media-icon {
+}
+
+.social-media-icon {
     background-color: white;
     border-radius: 6px; /* Adjust the radius as needed */
     padding: 4px; /* Optional: adds some space inside the border */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
-  }
+}
